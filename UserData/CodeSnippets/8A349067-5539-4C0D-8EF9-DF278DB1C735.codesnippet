@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>checkedExactlyWord</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let True1 = "Báloise".contains(string: "baloise", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True2 = "Báloise ".contains(string: "baloise", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True3 = "S Báloise".contains(string: "baloise", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True4 = "More Báloise More".contains(string: "baloise", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True5 = "Báloise More".contains(string: "baloise", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let False6 = "SBáloise".contains(string: "baloise", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let False7 = "More BáloiseMore".contains(string: "baloise", caseSensitive: false, searchLevel: .exactlyOneWord)
+        
+        let True11 = "swiss re".contains(string: "SWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True22 = "swiss rë ".contains(string: "SWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True33 = "S swiss re".contains(string: "SWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True44 = "More swiss rë More".contains(string: "SWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True55 = "swiss rë More".contains(string: "SWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let False66 = "Sswiss rë".contains(string: "SWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let False77 = "More swiss rëMore".contains(string: "SWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        
+        let True331 = "awiss re".contains(string: "AWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True332 = "awiss rë ".contains(string: "aWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True333 = "S áwiss re".contains(string: "áwISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True444 = "More âwiss rë More".contains(string: "aWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True555 = "àwiss rë More".contains(string: "áWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let False666 = "Sáwiss rë".contains(string: "âWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let False777 = "More äwiss rëMore".contains(string: "áWISS RE", caseSensitive: false, searchLevel: .exactlyOneWord)
+        
+        let True6 = "goldrice and gold".contains(string: "gold", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True6_1 = "goldricegold and gold ".contains(string: "gold", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True6_2 = "goldrice gold and gold ".contains(string: "gold", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True6_3 = "gold gold and gold ".contains(string: "gold", caseSensitive: false, searchLevel: .exactlyOneWord)
+        let True6_4 = "goldme gold me and gold ".contains(string: "gold me", caseSensitive: false, searchLevel: .exactlyOneWord)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8A349067-5539-4C0D-8EF9-DF278DB1C735</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>checkedExactlyWord</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

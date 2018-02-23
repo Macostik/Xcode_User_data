@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>fixedInsetSeparator</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  if ([tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        cell.preservesSuperviewLayoutMargins = NO;
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9587514F-113D-4971-B85A-BD8C669EF4A2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>fixedInsetSeparator iOS 8</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>fixedInsetSeparator</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

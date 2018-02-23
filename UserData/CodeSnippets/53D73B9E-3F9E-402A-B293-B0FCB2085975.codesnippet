@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>heightCell</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	if (self.searchDisplayController.searchResultsTableView == tableView) {
+		return 44;
+	}
+	static DetailTableViewCell *cell;
+	if (cell == nil) {
+		cell = [tableView dequeueReusableCellWithIdentifier:@"DetailCell"];
+	}
+	[self fillContentCell:cell withIndexPath:indexPath];
+	return [cell heightForRowAtIndexPath:indexPath];
+}
+
+- (void)fillContentCell:(DetailTableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath {
+	cell.detailLabel.text = detailArray[indexPath.row];
+}
+
+- (CGFloat) heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + 1.0f;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>53D73B9E-3F9E-402A-B293-B0FCB2085975</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>heightCell</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

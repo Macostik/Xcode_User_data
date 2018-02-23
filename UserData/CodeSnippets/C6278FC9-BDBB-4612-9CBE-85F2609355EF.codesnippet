@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>streamViewBegin</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> @IBOutlet var streamView: StreamView!
+    var dataSource: StreamDataSource&lt;[Transaction]&gt;?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        dataSource = StreamDataSource(streamView: streamView)
+        let metrics = StreamMetrics&lt;TransactionCell&gt;(size: 70.0)
+        let footerMetrics = StreamMetrics&lt;TransactionItemFooter&gt;(size: 100.0)
+        dataSource?.addMetrics(metrics: metrics)
+        dataSource?.addSectionFooterMetrics(metrics: footerMetrics)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C6278FC9-BDBB-4612-9CBE-85F2609355EF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>streamViewBegin</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

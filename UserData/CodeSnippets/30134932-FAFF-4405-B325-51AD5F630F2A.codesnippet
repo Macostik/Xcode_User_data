@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sortFile</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// sort by level, then acheivement points
+- (NSComparisonResult)compare:(DBFile *)other
+{
+    NSComparisonResult order;
+    
+    // first compare modified
+    order = [other.modified compare:self.modified];
+    
+    // if same modified alpha by path
+    if (order == NSOrderedSame) {
+        order = [other.path compare:self.path];
+    }
+    return order;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>30134932-FAFF-4405-B325-51AD5F630F2A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>sortFile by the Date</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

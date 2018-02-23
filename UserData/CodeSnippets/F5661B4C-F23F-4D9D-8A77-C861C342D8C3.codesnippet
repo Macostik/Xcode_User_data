@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CustomStrinngConvertible</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension CustomStringConvertible {
+    var description : String {
+        var description: String = ""
+        if self is AnyObject {
+            description = "***** \(type(of: self)) - &lt;\(unsafeBitCast((self as AnyObject), to: Int.self)))&gt;***** \n"
+        } else {
+            description = "***** \(type(of: self)) *****\n"
+        }
+        let selfMirror = Mirror(reflecting: self)
+        for child in selfMirror.children {
+            if let propertyName = child.label {
+                description += "\(propertyName): \(child.value)\n"
+            }
+        }
+        return description
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F5661B4C-F23F-4D9D-8A77-C861C342D8C3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Extension</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CustomStrinngConvertible</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

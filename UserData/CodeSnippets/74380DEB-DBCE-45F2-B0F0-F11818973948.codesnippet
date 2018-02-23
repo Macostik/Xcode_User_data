@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>animateView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CATransition *showViewTransition = [CATransition animation];
+    showViewTransition.duration = 0.33f;
+    showViewTransition.type = kCATransitionPush;
+    showViewTransition.subtype = kCATransitionFromTop;
+    showViewTransition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [self.view addSubview:self.descriptionView];
+    [[self.descriptionView layer] addAnimation:showViewTransition forKey:@"showDescriptionView"];
+    self.descriptionView.frame = (CGRect){{ 0, self.view.centerBoundary.y},{self.descriptionView.frame.size.width, self.descriptionView.frame.size.height}};</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>74380DEB-DBCE-45F2-B0F0-F11818973948</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>animateView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>animateView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

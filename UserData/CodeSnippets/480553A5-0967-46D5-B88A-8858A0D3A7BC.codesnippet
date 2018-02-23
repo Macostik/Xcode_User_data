@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Alamofire_Settings</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+import Alamofire
+
+public enum ImaggaRouter: URLRequestConvertible {
+    static let baseURLPath = "http://api.imagga.com/v1"
+    static let authenticationToken = "Basic xxx"
+    
+    case Content
+    case Tags(String)
+    case Colors(String)
+    
+    public var URLRequest: NSMutableURLRequest {
+        let result: (path: String, method: Alamofire.Method, parameters: [String: AnyObject]) = {
+            switch self {
+            case .Content:
+                return ("/content", .POST, [String: AnyObject]())
+            case .Tags(let contentID):
+                let params = [ "content" : contentID ]
+                return ("/tagging", .GET, params)
+            case .Colors(let contentID):
+                let params = [ "content" : contentID, "extract_object_colors" : NSNumber(int: 0) ]
+                return ("/colors", .GET, params)
+            }
+        }()
+        
+        let URL = NSURL(string: ImaggaRouter.baseURLPath)!
+        let URLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(result.path))
+        URLRequest.HTTPMethod = result.method.rawValue
+        URLRequest.setValue(ImaggaRouter.authenticationToken, forHTTPHeaderField: "Authorization")
+        URLRequest.timeoutInterval = NSTimeInterval(10 * 1000)
+        
+        let encoding = Alamofire.ParameterEncoding.URL
+        
+        return encoding.encode(URLRequest, parameters: result.parameters).0
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>480553A5-0967-46D5-B88A-8858A0D3A7BC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Alamofire_Settings</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Alamofire_Settings</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

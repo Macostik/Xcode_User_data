@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>binarySearch</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func search(element: Element) -&gt; Int? {
+    
+    var low = 0
+    var high = count
+    var mid = Int(high / 2)
+    
+    while low &lt; high {
+        
+        let midElement = self[mid]
+        
+        if element == midElement {
+            return mid
+        }
+        else if element &lt; midElement {
+            high = mid
+        }
+        else {
+            low = mid
+        }
+        
+        mid = (low + high) / 2
+    }
+    
+    return nil
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E6D4EE04-07A2-4866-9203-BC864EFA1367</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>binarySearch</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

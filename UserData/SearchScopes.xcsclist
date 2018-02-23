@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchScopes
+   version = "1.1">
+   <Scope
+      name = "My Scope"
+      predicate = "location_workspace == &quot;&quot;"
+      uuid = "E8C1F515-B611-45F5-A5A7-E0DB24382504">
+   </Scope>
+</SearchScopes>

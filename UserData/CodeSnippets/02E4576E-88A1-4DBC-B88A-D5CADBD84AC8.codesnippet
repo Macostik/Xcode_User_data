@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>enum</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>typedef NS_OPTIONS(NSUInteger, UIViewAutoresizing) {
+    UIViewAutoresizingNone                 = 0,
+    UIViewAutoresizingFlexibleLeftMargin   = 1 &lt;&lt; 0,
+    UIViewAutoresizingFlexibleWidth        = 1 &lt;&lt; 1,
+    UIViewAutoresizingFlexibleRightMargin  = 1 &lt;&lt; 2,
+    UIViewAutoresizingFlexibleTopMargin    = 1 &lt;&lt; 3,
+    UIViewAutoresizingFlexibleHeight       = 1 &lt;&lt; 4,
+    UIViewAutoresizingFlexibleBottomMargin = 1 &lt;&lt; 5
+};</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>02E4576E-88A1-4DBC-B88A-D5CADBD84AC8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>create ownEnum</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>enum</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

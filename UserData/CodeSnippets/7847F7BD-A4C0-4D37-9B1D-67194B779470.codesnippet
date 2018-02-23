@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>extension_var</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private var imageSourceKey: Void?
+    
+    private(set) var kf_imageSource: ImageSource? {
+            get {
+                return objc_getAssociatedObject(self, &amp;imageSourceKey) as? ImageSource
+            }
+            set {
+                objc_setAssociatedObject(self, &amp;imageSourceKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            }
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7847F7BD-A4C0-4D37-9B1D-67194B779470</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>setup_custom_extension_var</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>custom_extension_var</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

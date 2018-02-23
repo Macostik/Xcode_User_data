@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>leftBarButtonItem</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UINavigationBar* navigationBar = self.navigationController.navigationBar;
+    [navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    UIBarButtonItem *closeButton =
+    [[UIBarButtonItem alloc] initWithTitle:@"Close"
+                                     style:UIBarButtonItemStylePlain
+                                    target:self
+                                    action:@selector(closeButtonTapped:)];
+    
+    closeButton.tintColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem = closeButton;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>27B36300-F93A-4BC5-AE77-90DAB38AEA70</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Add_leftBarButtonItem</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

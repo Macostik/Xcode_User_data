@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>substringFromString</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSRange range = [&lt;#mutableString#&gt; rangeOfString:&lt;#string#&gt;];
+&lt;#mutableString#&gt; = [&lt;#mutableString#&gt; substringFromIndex:range.location + range.length].mutableCopy;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>61A49E47-5320-4A3A-B3E9-1D95CA7BC1F9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>substringFromString</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>substringFromString</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

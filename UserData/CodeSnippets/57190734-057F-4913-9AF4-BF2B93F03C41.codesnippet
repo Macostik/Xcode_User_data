@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>constraintsTwoVertical</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>add(&lt;##&gt;, {
+            $0.leading.equalTo(self).offset(20)
+            $0.bottom.equalTo(self.snp.centerY).offset(-10)
+        })
+        add(&lt;##&gt;, {
+            $0.leading.equalTo(&lt;##&gt;)
+            $0.top.equalTo(self.snp.centerY).offset(10)
+        })</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>57190734-057F-4913-9AF4-BF2B93F03C41</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>constraintsTwoVertical</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

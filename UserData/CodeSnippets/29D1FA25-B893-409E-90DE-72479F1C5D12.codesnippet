@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>searchOrder</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> print ("\t case 1.1 \n--------------------\n\(case_1_1.map{ $0.firstCompanyName })\t\n------------------")
+            print ("\t case 1.2 \n--------------------\n\(case_1_2.map { $0.name })\t\n------------------")
+            print ("\t case 1.3 \n--------------------\n\(case_1_3.map { $0.name })\t\n------------------")
+            print ("\t case 2.1 \n--------------------\n\(case_2_1.map { $0.firstCompanyName })\t\n------------------")
+            print ("\t case 2.2 \n--------------------\n\(case_2_2.map { $0.name })\t\n------------------")
+            print ("\t case 2.3 \n--------------------\n\(case_2_3.map { $0.keywords.replacingOccurrences(of: kDefaultKeywordsSeparator, with: " ").components(separatedBy: " ").filter{ searchText.contains(string: $0, caseSensitive: false, searchLevel: String.SearchLevel.exactlyOneWord) } } )\t\n------------------")
+            print ("\t case 3.1 \n--------------------\n\(case_3_1.map { $0.firstCompanyName })\t\n------------------")
+            print ("\t case 3.2 \n--------------------\n\(case_3_2.map { $0.name }) \t\n------------------")
+            print ("\t case 3.3 \n--------------------\n\(case_3_3.map { $0.name })\t\n------------------")
+            print ("\t case 4 \n--------------------\n\(case_4.map { $0.name + " (\($0.firstCompanyName))" })\t\n------------------")
+            print ("\t case 5 \n--------------------\n\(case_5.map { $0.name })\t\n------------------")</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>29D1FA25-B893-409E-90DE-72479F1C5D12</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>searchOrder</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

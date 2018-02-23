@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>button</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> self.acceptButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.acceptButton.titleLabel.font = BUTTON_FONT;
+    self.acceptButton.backgroundColor = [UIColor clearColor];
+    [self.acceptButton setTitle:@"Accept" forState:UIControlStateNormal];
+    [self.acceptButton setTitle:@"Accept" forState:UIControlStateHighlighted];
+    [self.acceptButton setTitleColor:BUTTON_TEXT_COLOR forState: UIControlStateNormal];
+    [self.acceptButton setTitleColor:[UIColor grayColor] forState: UIControlStateHighlighted];
+    self.acceptButton.layer.borderColor = BORDER_COLOR;
+    self.acceptButton.layer.borderWidth = 2.0;
+    self.acceptButton.layer.cornerRadius = 4.0;
+    [self.acceptButton addTarget:self action:@selector(onAcceptClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.bubbleImageView addSubview:self.acceptButton];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FBA85564-C414-43F4-9BD1-55CD8828EA67</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

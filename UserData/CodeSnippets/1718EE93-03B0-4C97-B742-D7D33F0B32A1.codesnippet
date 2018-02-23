@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>print ("\t topCompanyResearchItems\n--------------------\n\(topCompanyResearchItems.map{ $0.name })\t\n------------------")
+            print ("\t topFirstNameResearchItems\n--------------------\n\(topFirstNameResearchItems.map { $0.name })\t\n------------------")
+            print ("\t topAnyItems\n--------------------\n\(topAnyItems.map{ $0.name })\t\n------------------")
+            print ("\t companyByName\n--------------------\n\(companyByName.map { $0.name })\t\n------------------")
+            print ("\t itemsByName\n--------------------\n\(itemsByName.map { $0.name })\t\n------------------")
+            print ("\t anyItemsByName\n--------------------\n\(anyItemsByName.map { $0.name })\t\n------------------")
+            print ("\t otherCompanyItems\n--------------------\n\(otherCompanyItems.map { $0.name })\t\n------------------")
+            print ("\t anyOtherItems\n--------------------\n\(anyOtherItems.map { $0.name })\t\n------------------")
+            print ("\t itemsByKeyword\n--------------------\n\(itemsByKeyword.map { $0.name} )\t\n------------------")
+            print ("\t otherFirstNameItems\n--------------------\n\(otherFirstNameItems.map { $0.name })\t\n------------------")</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1718EE93-03B0-4C97-B742-D7D33F0B32A1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

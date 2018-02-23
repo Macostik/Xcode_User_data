@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>coolSelectedEffect</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)drawRect:(CGRect)rect {
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    UIColor *color = [UIColor colorWithWhite:0 alpha:.6];
+    
+    CGContextSetFillColorWithColor(ctx, color.CGColor);
+    CGContextFillRect (ctx, rect);
+    
+    CGRect frame = [&lt;#superView#&gt; convertRect:&lt;#bounds view#&gt; fromView:&lt;#itself view#&gt;];
+    
+    CGContextSetShadowWithColor (ctx, CGSizeZero, 15.0, color.CGColor);
+    CGContextClearRect(ctx, frame);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E63B03E1-AD58-4AB8-8F0F-795BC2B79588</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>coolSelectedEffect</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>coolSelectedEffect</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

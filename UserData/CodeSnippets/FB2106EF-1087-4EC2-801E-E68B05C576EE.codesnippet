@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>NumberFormatter</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> class YAxisValueFormatter: NSObject, IAxisValueFormatter {
+        
+        let numFormatter: NumberFormatter
+        
+        override init() {
+            numFormatter = NumberFormatter()
+            numFormatter.minimumFractionDigits = 1
+            numFormatter.maximumFractionDigits = 1
+            
+            // if number is less than 1 add 0 before decimal
+            numFormatter.minimumIntegerDigits = 1 // how many digits do want before decimal
+            numFormatter.paddingPosition = .beforePrefix
+            numFormatter.paddingCharacter = "0"
+        }
+        
+        /// Called when a value from an axis is formatted before being drawn.
+        ///
+        /// For performance reasons, avoid excessive calculations and memory allocations inside this method.
+        ///
+        /// - returns: The customized label that is drawn on the axis.
+        /// - parameter value:           the value that is currently being drawn
+        /// - parameter axis:            the axis that the value belongs to
+        ///
+        
+        public func stringForValue(_ value: Double, axis: AxisBase?) -&gt; String {
+            return numFormatter.string(from: NSNumber(floatLiteral: value))!
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FB2106EF-1087-4EC2-801E-E68B05C576EE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NumberFormatter</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

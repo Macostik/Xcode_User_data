@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>wrapper</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  class ChristmasPresent {}
+    
+    struct WrappedPresent&lt;T: ChristmasPresent&gt; {
+        let present: T
+    }
+    
+    func wrap&lt;T:ChristmasPresent&gt;(present: T) -&gt; WrappedPresent&lt;T&gt; {
+        return WrappedPresent(present: present);
+    }
+    
+    class ToyCar: ChristmasPresent {}
+    
+    let wrappedToyCar = wrap(ToyCar()) // Inferred to be: WrappedPresent&lt;ToyCar&gt;
+    
+    override func didDequeue() {
+        super.didDequeue()
+        swipeAction?.reset()
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7F0A9F39-CF68-419E-AA34-99343AED0E4C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>wrapper</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

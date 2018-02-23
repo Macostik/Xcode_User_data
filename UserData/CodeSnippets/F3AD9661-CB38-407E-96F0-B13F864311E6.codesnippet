@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>attributedString</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)setFont:(UIFont *)font forString:(NSString *)string label:(UILabel*)label {
+    NSRange stringRange = [label.text rangeOfString:string];
+    NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:label.text];
+    
+    if(stringRange.location != NSNotFound) {
+        [attributedString addAttribute:NSFontAttributeName
+                                 value:font
+                                 range:stringRange];
+    }
+    
+    label.attributedText = attributedString;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F3AD9661-CB38-407E-96F0-B13F864311E6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>attributedString</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
