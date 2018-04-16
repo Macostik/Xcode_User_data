@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>warning</string>
+	<string>fittingSize</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string></string>
+	<string>view.systemLayoutSizeFitting(UILayoutFittingExpandedSize)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>37399521-41C8-40BE-A6F8-A6D2CB845FBE</string>
+	<string>995BE089-AF62-4337-AC43-F841C98DF69A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>warning</string>
+	<string>fittingSize</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>stringHeight</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension String {
+    func heightWithFont(font: UIFont, width: CGFloat) -&gt; CGFloat {
+        let size = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let height = self.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil).height
+        return ceil(height)
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B1032EFC-6A58-4782-9F6C-C060A942FFE4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>stringHeight</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

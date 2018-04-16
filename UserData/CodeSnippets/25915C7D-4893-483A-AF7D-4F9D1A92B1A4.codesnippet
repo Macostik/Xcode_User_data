@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>streamView.showsHorizontalScrollIndicator = false
+        streamView.isScrollEnabled = false
+        let metrics = StreamMetrics&lt;CharacterCell&gt;()
+        metrics.selectable = false
+        metrics.modifyItem = { [unowned self] item in
+            item.size = self.streamView.width/3
+        }
+        dataSource.addMetrics(metrics: metrics)
+        dataSource.items = ["one", "two", "three"]</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>25915C7D-4893-483A-AF7D-4F9D1A92B1A4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

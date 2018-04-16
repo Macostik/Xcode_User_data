@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    static let json = """
+{
+"user": {
+"id":"1",
+"firstName":"Yura",
+"lastName":"Granchenko",
+"photoUrl":"https://itunes.apple.com/gb/podcast/blue-planet-ii-the-podcast/id1296222557?mt=2",
+"email":"yura-granchenko@yandex.ru",
+"friends":[
+{
+"id":"1",
+"firstName":"Oleg",
+"lastName":"Granchenko",
+"photoUrl":"https://itunes.apple.com/gb/podcast/blue-planet-ii-the-podcast/id1296222557?mt=2",
+},
+{
+"id":"2",
+"firstName":"Max",
+"lastName":"Granchenko",
+"photoUrl":"https://itunes.apple.com/gb/podcast/the-butterfly-effect-with-jon-ronson/id1258779354?mt=2",
+},
+{
+"id":"3",
+"firstName":"Tanya",
+"lastName":"Granchenko",
+"photoUrl":"https://itunes.apple.com/gb/podcast/ted-talks-daily/id160904630?mt=2"
+}
+]
+}
+}
+"""</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A43F0D34-C5F7-4A26-BD15-AEA6CD38283C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

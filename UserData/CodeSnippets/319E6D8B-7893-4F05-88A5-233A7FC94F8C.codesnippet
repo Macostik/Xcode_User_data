@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>warning</string>
+	<string>dataSourceSetup</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string></string>
+	<string>fileprivate lazy var dataSource: StreamDataSource&lt;[&lt;#Type#&gt;]&gt; = {
+let ds = StreamDataSource&lt;[&lt;#Type#&gt;]&gt;(streamView: self.streamView)
+        return ds
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>37399521-41C8-40BE-A6F8-A6D2CB845FBE</string>
+	<string>319E6D8B-7893-4F05-88A5-233A7FC94F8C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>warning</string>
+	<string>dataSourceSetup</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
